@@ -1,4 +1,4 @@
-class Menu extends Comida {
+export class Menu extends Comida {
     constructor(nombre, imagen, tamanio, precio, cantidad, listaComida) {
         super(nombre, imagen, tamanio, precio, cantidad);
         this.listaComida = listaComida;

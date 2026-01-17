@@ -1,4 +1,4 @@
-class Grupo {
+export class Grupo {
 
     constructor(listaPizzas, imagenGrupo) {
         this.listaPizzas = listaPizzas;
