@@ -1,0 +1,52 @@
+#header {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.menu {
+    width: fit-content;
+    height: 6vh;
+    background-color: #b48ae0;
+    border-radius: 50px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2%;
+    padding: 0.5vh 2vw;
+}
+
+.menu .botones {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu .botones input {
+    height: 65%;
+    padding: 0 1.3vw;
+    background-color: transparent;
+    color: black;
+    border: 1.5px solid transparent;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-family: fantasy;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.menu .botones input:hover {
+    background-color: gold;
+    border-color: black;
+}
+
+.menu .botones input:active {
+    transform: scale(0.97);
+}
