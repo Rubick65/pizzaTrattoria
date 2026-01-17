@@ -1,12 +1,13 @@
-const SABOR = Object.freeze({
+export const SABOR = Object.freeze({
     DULCE: "Dulce",
     SALADA: "Salada",
     AGRIA: "AGRIA",
     ACIDA: "ÁCIDA",
     AMARGA: "AMARGA",
+    AGUA: "AGUA",
 });
 
-class Bebida extends Comida {
+export class Bebida extends Comida {
 
     /**
      * Modelo de datos del objeto bebida

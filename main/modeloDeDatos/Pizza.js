@@ -1,11 +1,11 @@
-const MASA = Object.freeze({
+export const MASA = Object.freeze({
     CLASICA: "clasica",
     FINA: "fina",
     GRUESA: "gruesa",
 });
 
 
-class Pizza extends Comida {
+export class Pizza extends Comida {
 
     /**
      * Da valores iniciales a las pizzas

@@ -1,4 +1,4 @@
-class Postres extends Comida{
+export class Postres extends Comida{
 
     /**
      * Modelo de datos del objeto postre

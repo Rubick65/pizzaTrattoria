@@ -1,4 +1,4 @@
-class Entrantes extends Comida{
+export class Entrantes extends Comida{
 
     constructor(nombre,imagen,tamanio,precio,cantidad,descripcion) {
         super(nombre,imagen,tamanio,precio,cantidad);

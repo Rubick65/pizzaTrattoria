@@ -1,10 +1,10 @@
-const TAMANIO = Object.freeze({
+export const TAMANIO = Object.freeze({
     PEQUENIO: "pequeño",
     MEDIANO: "mediano",
     GRANDE: "grande",
 });
 
-class Comida {
+export class Comida {
 
     /**
      * Da valores por defecto a los atributos de clase
