@@ -1,45 +1,39 @@
-let header = document.getElementById("header"); //Header a añadir el menu
-const tituloBotones = ["Menus","Entrantes","Pizzas","Bebidas","Postres"]; //Botones a añadir
-
 /**
- * Creacion de boton para el menu segun el texto
- * @param texto texto del boton
- * @returns {HTMLDivElement} se devuelve el div creado
+ * Funcion para crear boton segun el texto que le pases
+ * @param texto texto a escribir
+ * @returns {*|jQuery} devuelve el div para su futuro uso
  */
 function crearBoton(texto) {
 
-    //Creamos el div que rodeara al boton
-    let div = document.createElement("div");
-    div.className = "botones";
+    //Creamos div que contiene al boton
+    let $div = $("<div>").addClass("botones");
 
     //Creamos el boton
-    let boton = document.createElement("input");
-    boton.type = "button";
-    boton.value = texto;
+    let $boton = $("<input>").attr("type", "button").val(texto);
 
-    div.appendChild(boton);
-
-    //Se devuelve para su futuro uso
-    return div;
+    //Se añade al div y se devuelve
+    $div.append($boton);
+    return $div;
 }
 
 /**
- * Funcion para crear el menu segun la cantidad de botones que vaya a ver.
+ * Funcion para crear el menu segun la cantidad de botones
  */
-function crearMenu(){
+function crearMenu() {
+    //Se obtiene el header
+    let $header = $("#header");
 
-    //Se crea el div que contendra todo los botones
-    let div = document.createElement("div");
-    div.className = "menu";
+    //Creamos el contenedor de los botones
+    let $menu = $("<div>").addClass("menu");
 
-    //Por cada boton, se añade al div
-    tituloBotones.forEach(titulo => {
-        div.appendChild(crearBoton(titulo));
+    //Por cada tituloBoton encontrado, se crea un boton y se añade al div
+    tituloBotones.forEach(function (titulo) {
+        $menu.append(crearBoton(titulo));
     });
 
-    //Finalmente se añade al header
-    header.appendChild(div);
+    //El header lo obtiene ya creado todo.
+    $header.append($menu);
 }
 
-//Lo creo para probarlo, Ruben Martin Perraco.
+//Lo pruebo :)
 crearMenu();
