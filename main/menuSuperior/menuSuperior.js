@@ -2,6 +2,8 @@ import { tituloBotones } from "./cargarDatosMenu.js";
 
 let $header = $("#header"); // Se carga el header aqui para evitar errores
 
+let $botonActual = null;
+
 /**
  * Funcion para crear los botones del menu
  * @param texto de cada boton
@@ -14,14 +16,13 @@ function crearBoton(texto) {
         value: texto
     });
 
-    //Evento para cambiar color del boton mientras se mantiene presionado
     $boton.on("mousedown", function () {
-        $boton.addClass("selected");
+        if ($botonActual) {
+            $botonActual.removeClass("selected");
+        }
 
-        //Una vez se deje de presionar, se resetea el color
-        $(document).one("mouseup", function () {
-            $boton.removeClass("selected");
-        });
+        $boton.addClass("selected");
+        $botonActual = $boton;
     });
 
     $div.append($boton);
