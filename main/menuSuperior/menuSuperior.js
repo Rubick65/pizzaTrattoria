@@ -1,5 +1,7 @@
 let header = document.getElementById("header"); //Header a añadir el menu
 const tituloBotones = ["Menus","Entrantes","Pizzas","Bebidas","Postres"]; //Botones a añadir
+let botonSeleccionado = null; // Guarda el boton actualmente activo
+
 
 /**
  * Creacion de boton para el menu segun el texto
@@ -16,6 +18,19 @@ function crearBoton(texto) {
     let boton = document.createElement("input");
     boton.type = "button";
     boton.value = texto;
+
+    //Evento para cuando le des click se añada a la clase seleccionado
+    boton.addEventListener('click', () => {
+
+        //Si ya hay un botón seleccionado, lo quitamos
+        if( botonSeleccionado && botonSeleccionado !== boton) {
+            botonSeleccionado.classList.remove('selected');
+        }
+
+        // Marcamos este botón como seleccionado
+        boton.classList.add('selected');
+        botonSeleccionado = boton;
+    });
 
     div.appendChild(boton);
 

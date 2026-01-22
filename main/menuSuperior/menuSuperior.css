@@ -12,7 +12,7 @@
 .menu {
     width: fit-content;
     height: 6vh;
-    background-color: #b48ae0;
+    background-color: #985ada;
     border-radius: 50px;
     border: 2px solid black;
     display: flex;
@@ -49,4 +49,9 @@
 
 .menu .botones input:active {
     transform: scale(0.97);
+}
+
+.menu .botones input.selected {
+    background-color: gold;
+    border-color: black;
 }
