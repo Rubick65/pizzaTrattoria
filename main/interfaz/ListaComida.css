@@ -1,0 +1,49 @@
+#carruselComida {
+    position: relative;
+    display: flex;
+    width: 900px;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.carrusel-pista {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: max-content;
+}
+
+.botonCarrusel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+}
+
+
+#anterior {
+    background-image: url("../imagenes_pizzeria/botonRetroceso.png");
+    background-size: cover;
+}
+
+#siguiente {
+    right: 10px;
+    background-image: url("../imagenes_pizzeria/botonSiguientepng.png");
+    background-size: cover;
+
+}
+
+.carrusel-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

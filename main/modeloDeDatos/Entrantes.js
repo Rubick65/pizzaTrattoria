@@ -1,14 +1,12 @@
+import {Comida} from "./Comida.js";
+
 export class Entrantes extends Comida{
 
-    constructor(nombre,imagen,tamanio,precio,cantidad,descripcion) {
+    constructor(nombre,imagen,tamanio,precio,cantidad,descripcion, unidades = null) {
         super(nombre,imagen,tamanio,precio,cantidad);
         this.descripcion = descripcion;
-    }
-
-    constructor(nombre,imagen,tamanio,precio,cantidad,descripcion,unidades) {
-        super(nombre,imagen,tamanio,precio,cantidad);
-        this._descripcion = descripcion;
         this._unidades = unidades;
+
     }
 
     get descripcion() {
@@ -25,5 +23,8 @@ export class Entrantes extends Comida{
 
     set unidades(value) {
         this._unidades = value;
+    }
+    toString() {
+        return this.descripcion.toString();
     }
 }
