@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Se crean siempre, en todas las páginas
     crearBanner();
-    crearMenu();
 
     /**
      * Función que crea el banner superior (logo, idiomas y cesta)
@@ -48,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Comportamiento al hacer click en el logo
         document.getElementById("logo").addEventListener("click", () => {
-            window.location.href = "index.html";
+            window.location.href = "../botonesHTML/Pizzas.html";
         });
 
         // Comportamiento del botón cesta

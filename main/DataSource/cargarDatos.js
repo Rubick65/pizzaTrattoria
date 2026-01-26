@@ -28,6 +28,16 @@ export const pizzas = [
     new Pizza("Pepperoni", "../imagenes_pizzeria/pizza_2.png", TAMANIO.MEDIANO, 9.0, 1, MASA.GRUESA, "Queso,Tomate y Pepperoni", true)
 ];
 
+
+export const pizzaDiamond = [
+    new Pizza("Margarita", "../imagenes_pizzeria/pizza_1.png", TAMANIO.PEQUENIO, 10.0, 1, MASA.CLASICA, "Queso y Tomate ", true),
+    new Pizza("Pepperoni", "../imagenes_pizzeria/pizza_2.png", TAMANIO.MEDIANO, 5.0, 1, MASA.GRUESA, "Queso,Tomate y Pepperoni", true),
+    new Pizza("Cuatro Quesos", "../imagenes_pizzeria/pizza_3.png", TAMANIO.PEQUENIO, 3.0, 1, MASA.CLASICA, "Queso y Tomate", false),
+    new Pizza("Anchoa", "../imagenes_pizzeria/pizza_4.png", TAMANIO.MEDIANO, 2.0, 1, MASA.GRUESA, "Queso,Tomate y Pepperoni", true),
+    new Pizza("Carnivora", "../imagenes_pizzeria/pizza_5.png", TAMANIO.PEQUENIO, 4.0, 1, MASA.CLASICA, "Queso y Tomate", false),
+    new Pizza("Bordes rellenos", "../imagenes_pizzeria/pizza_6.png", TAMANIO.MEDIANO, 8.0, 1, MASA.GRUESA, "Queso,Tomate y Pepperoni", true)
+]
+
 // Lista de Postres
 export const postres = [
     new Postres("Helado", "imagenes/naranja.png", TAMANIO.PEQUENIO, 2.5, 1, 250),
@@ -42,6 +52,6 @@ export const menus = [
 
 // Lista de Grupos de Pizza
 export const grupos = [
-    new Grupo(pizzas, "../imagenes_pizzeria/diamondIsUnbreakable.png"),
+    new Grupo(pizzaDiamond, "../imagenes_pizzeria/diamondIsUnbreakable.png"),
     new Grupo(pizzas, "../imagenes_pizzeria/diamondIsUnbreakable.png")
 ];
