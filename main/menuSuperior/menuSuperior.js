@@ -11,6 +11,10 @@ function crearBoton(texto) {
         if ($botonActual) {
             $botonActual.removeClass("selected");
         }
+        //Se reinicia la animacion
+        $boton.css("animation", "none");
+        void $boton[0].offsetWidth;
+        $boton.css("animation", "punchQuick 0.25s ease");
 
         $boton.addClass("selected");
         $botonActual = $boton;
