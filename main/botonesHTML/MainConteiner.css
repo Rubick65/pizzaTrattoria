@@ -1,8 +1,14 @@
-/*#header {*/
-/*    position: fixed;*/
-/*    top: 5%;*/
-/*    left: 50%;*/
-/*    transform: translateX(-50%);*/
-/*    z-index: 1000;*/
-/*}*/
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Banner arriba, Menú abajo */
+    z-index: 100;
+    background-color: white;
+}
 
+html, body {
+    height: 100vh; /* 100% de la altura de la ventana */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
