@@ -1,0 +1,73 @@
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #985ada;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-opcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-boton {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.footer-boton::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.footer-boton:hover::after {
+    width: 100%;
+}
+
+.footer-subopciones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 12px;
+    font-family: cursive;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.footer-subopcion {
+    font-size: 14px;
+    color: black;
+}
+
+.footer-subopciones.invisible {
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+}
+
+.footer-boton.activo::after {
+    width: 100%;
+}
