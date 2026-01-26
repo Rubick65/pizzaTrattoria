@@ -34,7 +34,7 @@
 }
 
 .menu .botones button:hover {
-    background-image: url("/imagenes_pizzeria/botonRoto.png");
+    background-image: url("/main/imagenes_pizzeria/botonRoto.png");
     background-color: transparent;
     border: none;
     background-repeat: no-repeat;
@@ -43,7 +43,7 @@
 }
 
 .menu .botones button.selected {
-    background-image: url("/imagenes_pizzeria/botonRoto.png");
+    background-image: url("/main/imagenes_pizzeria/botonRoto.png");
     background-color: transparent;
     border: none;
     background-repeat: no-repeat;
