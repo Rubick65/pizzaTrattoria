@@ -1,3 +1,5 @@
+import {Comida} from "./Comida.js";
+
 export class Postres extends Comida{
 
     /**

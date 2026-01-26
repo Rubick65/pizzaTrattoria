@@ -20,7 +20,6 @@ export class Comida {
         this.tamanio = tamanio;
         this.precio = precio;
         this.cantidad = cantidad;
-        this._id = id;
     }
 
 
@@ -77,5 +76,8 @@ export class Comida {
 
     set cantidad(value) {
         this._cantidad = value;
+    }
+    toString() {
+
     }
 }

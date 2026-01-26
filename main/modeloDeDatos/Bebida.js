@@ -1,3 +1,5 @@
+import {Comida} from "./Comida.js";
+
 export const SABOR = Object.freeze({
     DULCE: "Dulce",
     SALADA: "Salada",

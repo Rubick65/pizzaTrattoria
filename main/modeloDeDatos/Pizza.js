@@ -1,3 +1,5 @@
+import {Comida} from "./Comida.js";
+
 export const MASA = Object.freeze({
     CLASICA: "clasica",
     FINA: "fina",
@@ -63,5 +65,9 @@ export class Pizza extends Comida {
 
     set gluten(value) {
         this._gluten = value;
+    }
+
+    toString() {
+        return this.ingredientes.toString();
     }
 }

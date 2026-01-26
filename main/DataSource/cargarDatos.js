@@ -1,10 +1,10 @@
-// cargarDatos.js
-import { Bebida } from "../modeloDeDatos/Bebida.js";
-import { Entrantes } from "../modeloDeDatos/Entrantes.js";
-import { Grupo } from "../modeloDeDatos/Grupo.js";
-import { Menu } from "../modeloDeDatos/Menu.js";
-import { Pizza } from "../modeloDeDatos/Pizza.js";
-import { Postres } from "../modeloDeDatos/Postres.js";
+import {Bebida, SABOR} from "../modeloDeDatos/Bebida.js";
+import {Entrantes} from "../modeloDeDatos/Entrantes.js"; // Añadido nombre de archivo
+import {Grupo} from "../modeloDeDatos/Grupo.js";         // Añadido nombre de archivo
+import {Menu} from "../modeloDeDatos/Menu.js";           // Añadido nombre de archivo
+import {MASA, Pizza} from "../modeloDeDatos/Pizza.js";
+import {Postres} from "../modeloDeDatos/Postres.js";     // Añadido nombre de archivo
+import {TAMANIO} from "../modeloDeDatos/Comida.js";
 
 // Lista de Bebidas
 export const bebidas = [
@@ -14,14 +14,18 @@ export const bebidas = [
 
 // Lista de Entrantes
 export const entrantes = [
-    new Entrantes("Patatas Fritas", "imagenes/patatas.png", TAMANIO.MEDIANO, 3.0, 1, "Crujientes y saladas", 23),
+    new Entrantes("Patatas Fritas", "../imagenes_pizzeria/entrante_1.png", TAMANIO.MEDIANO, 3.0, 1, "Crujientes y saladas deliciosas en cualquier momento del ", 23),
     new Entrantes("Ensalada Verde", "imagenes/entrante_1.png", TAMANIO.MEDIANO, 2.5, 1, "Fresca y ligera", 7)
 ];
 
 // Lista de Pizzas
 export const pizzas = [
-    new Pizza("Margarita", "imagenes/pizza_1.png", TAMANIO.PEQUENIO, 7.0, 1, MASA.CLASICA, "Queso y Tomate", true),
-    new Pizza("Pepperoni", "imagenes/pizza_2.png", TAMANIO.MEDIANO, 9.0, 1, MASA.GRUESA, "Queso,Tomate y Pepperoni", true)
+    new Pizza("Margarita", "../imagenes_pizzeria/pizza_1.png", TAMANIO.PEQUENIO, 7.0, 1, MASA.CLASICA, "Queso y Tomate", true),
+    new Pizza("Pepperoni", "../imagenes_pizzeria/pizza_2.png", TAMANIO.MEDIANO, 9.0, 1, MASA.GRUESA, "Queso,Tomate y Pepperoni", true),
+    new Pizza("Margarita", "../imagenes_pizzeria/pizza_1.png", TAMANIO.PEQUENIO, 7.0, 1, MASA.CLASICA, "Queso y Tomate", true),
+    new Pizza("Pepperoni", "../imagenes_pizzeria/pizza_2.png", TAMANIO.MEDIANO, 9.0, 1, MASA.GRUESA, "Queso,Tomate y Pepperoni", true),
+    new Pizza("Margarita", "../imagenes_pizzeria/pizza_1.png", TAMANIO.PEQUENIO, 7.0, 1, MASA.CLASICA, "Queso y Tomate", true),
+    new Pizza("Pepperoni", "../imagenes_pizzeria/pizza_2.png", TAMANIO.MEDIANO, 9.0, 1, MASA.GRUESA, "Queso,Tomate y Pepperoni", true)
 ];
 
 // Lista de Postres
@@ -38,6 +42,6 @@ export const menus = [
 
 // Lista de Grupos de Pizza
 export const grupos = [
-    new Grupo([pizzas[0], pizzas[1]], "imagenes/patron.png"),
-    new Grupo([pizzas[1]], "imagenes/logo.png")
+    new Grupo(pizzas, "../imagenes_pizzeria/diamondIsUnbreakable.png"),
+    new Grupo(pizzas, "../imagenes_pizzeria/diamondIsUnbreakable.png")
 ];
