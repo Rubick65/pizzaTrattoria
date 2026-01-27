@@ -1,0 +1,37 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.bottom-banner {
+    position: relative;
+    width: 100vw;
+    height: 160px;
+    overflow: hidden;
+}
+
+
+.bottom-banner .pattern {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 60px;
+
+    background-image: url("../imagenes_pizzeria/patron.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: auto 60px;
+}
+
+/* Rectángulo morado */
+.bottom-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 23px);
+    background-color: #5b17d1;
+}
