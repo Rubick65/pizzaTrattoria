@@ -1,2 +1,2 @@
 // nombre de los botones
-export const tituloBotones = ["Menus","Entrantes","Pizzas","Bebidas","Postres"];
+export const tituloBotones = ["Entrantes","Pizzas","Bebidas","Postres"];
