@@ -9,16 +9,16 @@ import {TAMANIO} from "../modeloDeDatos/Comida.js";
 // Lista de Bebidas
 export const bebidas = [
     new Bebida("Agua", "../imagenes_pizzeria/agua.png", TAMANIO.MEDIANO, 1.5, 1, 500, SABOR.AGUA, false),
-    new Bebida("Cola Kars", "../imagenes_pizzeria/colakars.png", TAMANIO.PEQUENIO, 2.0, 1, 330, SABOR.DULCE, false)
+    new Bebida("Cola Kars", "../imagenes_pizzeria/kars.png", TAMANIO.PEQUENIO, 2.0, 1, 330, SABOR.DULCE, false),
+    new Bebida("Limon Dio", "../imagenes_pizzeria/dio.png", TAMANIO.PEQUENIO, 2.5, 1, 370, SABOR.ACIDA, false),
+    new Bebida("Naranja Narancia", "../imagenes_pizzeria/naranja.png", TAMANIO.PEQUENIO, 2.5, 1, 300, SABOR.ACIDA, false),
+    new Bebida("Emerald Sprite", "../imagenes_pizzeria/sprite.png", TAMANIO.MEDIANO, 3.5, 1, 450, SABOR.DULCE, false),
 ];
 
 // Lista de Entrantes
 export const entrantes = [
-    new Entrantes("Patatas Fritas", "../imagenes_pizzeria/entrante_1.png", TAMANIO.MEDIANO, 3.0, 1, "Crujientes y saladas deliciosas en cualquier momento del ", 23),
-    new Entrantes("Ensalada Verde", "../imagenes_pizzeria/entrante_1.png", TAMANIO.MEDIANO, 2.5, 1, "Fresca y ligera", 7),
-    new Entrantes("Ensalada Verde", "../imagenes_pizzeria/entrante_1.png", TAMANIO.MEDIANO, 2.5, 1, "Fresca y ligera", 7),
-    new Entrantes("Ensalada Verde", "../imagenes_pizzeria/entrante_1.png", TAMANIO.MEDIANO, 2.5, 1, "Fresca y ligera", 7),
-    new Entrantes("Ensalada Verde", "../imagenes_pizzeria/entrante_1.png", TAMANIO.MEDIANO, 2.5, 1, "Fresca y ligera", 7),
+    new Entrantes("Patatas Fritas", "../imagenes_pizzeria/entrante_1.png", TAMANIO.MEDIANO, 3.0, 1, "Crujientes y saladas deliciosas en cualquier momento del dia", 23),
+    new Entrantes("Frituras Avdol", "../imagenes_pizzeria/avdol_1.png", TAMANIO.MEDIANO, 2.5, 1, "Directo desde la India, tan picante como el mismisimo fuego", 7),
 ];
 
 // Lista de Pizzas
@@ -35,10 +35,10 @@ export const pizzas = [
 export const pizzaDiamond = [
     new Pizza("Margarita", "../imagenes_pizzeria/pizza_1.png", TAMANIO.PEQUENIO, 10.0, 1, MASA.CLASICA, "Queso y Tomate ", true),
     new Pizza("Pepperoni", "../imagenes_pizzeria/pizza_2.png", TAMANIO.MEDIANO, 5.0, 1, MASA.GRUESA, "Queso,Tomate y Pepperoni", true),
-    new Pizza("Cuatro Quesos", "../imagenes_pizzeria/pizza_3.png", TAMANIO.PEQUENIO, 3.0, 1, MASA.CLASICA, "Queso y Tomate", false),
-    new Pizza("Anchoa", "../imagenes_pizzeria/pizza_4.png", TAMANIO.MEDIANO, 2.0, 1, MASA.GRUESA, "Queso,Tomate y Pepperoni", true),
-    new Pizza("Carnivora", "../imagenes_pizzeria/pizza_5.png", TAMANIO.PEQUENIO, 4.0, 1, MASA.CLASICA, "Queso y Tomate", false),
-    new Pizza("Bordes rellenos", "../imagenes_pizzeria/pizza_6.png", TAMANIO.MEDIANO, 8.0, 1, MASA.GRUESA, "Queso,Tomate y Pepperoni", true)
+    new Pizza("Cuatro Quesos", "../imagenes_pizzeria/pizza_3.png", TAMANIO.PEQUENIO, 3.0, 1, MASA.CLASICA, "Mezcla de quesos suaves y fuertes", false),
+    new Pizza("Anchoa", "../imagenes_pizzeria/pizza_4.png", TAMANIO.MEDIANO, 2.0, 1, MASA.GRUESA, "Anchoas saladas con queso", true),
+    new Pizza("Carnivora", "../imagenes_pizzeria/pizza_5.png", TAMANIO.PEQUENIO, 4.0, 1, MASA.CLASICA, "Diferentes carnes con queso", false),
+    new Pizza("Bordes rellenos", "../imagenes_pizzeria/pizza_6.png", TAMANIO.MEDIANO, 8.0, 1, MASA.GRUESA, "Pizza normal con queso en los bordes", true)
 ]
 
 // Lista de Postres
