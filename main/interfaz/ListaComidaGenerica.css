@@ -1,0 +1,23 @@
+#carruselComida {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: visible;   /* 👈 quitamos el recorte lateral */
+}
+
+.carrusel-wrapper {
+    display: flex;
+    justify-content: center;  /* centra todo el bloque */
+    width: 100%;
+}
+
+.carrusel-pista {
+    display: grid;                  /* grid en vez de flex */
+    grid-template-columns: repeat(3, 1fr);  /* mínimo 3 columnas iguales */
+    gap: 30px;
+    max-width: 1000px;             /* ancho máximo del bloque */
+    width: 100%;
+    margin: 0 auto;
+}
+🔹 V

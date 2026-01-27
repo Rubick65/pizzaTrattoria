@@ -52,6 +52,14 @@ export class Bebida extends Comida {
     set alcohol(alcohol) {
         this._alcohol = alcohol;
     }
-
+    toString() {
+        var alcohol_mensaje = "";
+        if (this.alcohol) {
+            alcohol_mensaje = "Con alcohol"
+        }else {
+            alcohol_mensaje = "Sin alcohol";
+        }
+        return this.sabor.toString()+ " " + alcohol_mensaje;
+    }
 
 }

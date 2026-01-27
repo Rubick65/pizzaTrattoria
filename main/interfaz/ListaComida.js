@@ -49,3 +49,18 @@ export function crearListaComida(listaComida) {
     return wrapper;
 
 }
+
+export function crearListaGenerica(listaComida) {
+    const wrapper = $("<div>").addClass("carrusel-wrapper");
+    const carruselComida = $("<div>").attr("id", "carruselComida");
+    const pista = $("<div>").addClass("carrusel-pista");
+
+    listaComida.forEach((comida) => {
+        pista.append(crearContenedorComida(comida));
+    });
+
+    carruselComida.append(pista);
+
+    wrapper.append(carruselComida);
+    return wrapper;
+}
