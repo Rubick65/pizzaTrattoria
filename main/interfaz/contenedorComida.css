@@ -2,7 +2,7 @@
 #contenedorComida {
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 100px;
     padding: 20px;
 }
 

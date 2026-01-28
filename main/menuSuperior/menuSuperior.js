@@ -1,4 +1,4 @@
-import { tituloBotones } from "./cargarDatosMenu.js";
+import {tituloBotones} from "./cargarDatosMenu.js";
 
 let $header = $("#header");
 let $botonActual = null;
@@ -7,10 +7,18 @@ function crearBoton(texto) {
     const $div = $("<div>").addClass("botones");
     const $boton = $("<button>").text(texto);
 
+    const botonGuardado = localStorage.getItem("botonSeleccionado");
+
+    if (botonGuardado === texto) {
+        $boton.addClass("selected");
+        $botonActual = $boton;
+    }
+
+
     $boton.on("click", () => {
-        if ($botonActual) {
-            $botonActual.removeClass("selected");
-        }
+
+        localStorage.setItem("botonSeleccionado", texto);
+
         $boton.css("animation", "none");
         void $boton[0].offsetWidth;
         $boton.css("animation", "punchQuick 0.25s ease");

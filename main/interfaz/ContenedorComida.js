@@ -1,4 +1,3 @@
-
 /**
  * Crea el contenedor donde se pondrán los datos de la comida
  * @param comida Comida cuyos datos queremos mostrar
@@ -70,8 +69,8 @@ function crearModal(modal, comida) {
 
     // Por último añade el contendor al modal
     modal.append(contenedorInfo);
-
 }
+
 
 /**
  * Crea los botones de recoger y a domicilio
