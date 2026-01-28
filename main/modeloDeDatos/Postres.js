@@ -23,4 +23,7 @@ export class Postres extends Comida{
     set calorias(value) {
         this._calorias = value;
     }
+    toString() {
+        return this.calorias.toString() + " Calorias";
+    }
 }

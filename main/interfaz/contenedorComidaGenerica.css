@@ -1,0 +1,119 @@
+
+#contenedorComida {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 20px;
+}
+
+#titulo {
+    text-align: center;
+    font-family: fantasy;
+    padding-bottom: 40px;
+}
+
+
+#contenedor-grupos {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 900px;
+    gap: 30px;
+}
+
+#imagen-grupo {
+    display: block;
+    margin: 0 auto;
+    max-width: 900px;
+    height: 60px;
+}
+
+.oculto {
+    display: none;
+}
+
+#overlay {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.82);
+
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: none;
+    z-index: 2;
+}
+
+#contenedorInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: bold clamp(0.9rem, 2vw, 1.140rem) "Lucida Grande", Helvetica, Arial, sans-serif;
+    margin-bottom: 0;
+    height: 100%;
+    justify-content: center;
+}
+
+#descripcionComida {
+    color: grey;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+#divComida {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    flex-shrink: 0;
+    border: none;
+    width: 300px;
+    z-index: 1;
+    text-align: center;
+}
+
+#imagenComida {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+
+}
+
+#nombreComida {
+    font: bold 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: clamp(1.5rem, 2vw, 1.8rem);
+}
+
+#contenedorBotones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.botones-pedido {
+    width: 40%;
+    border-radius: 20px;
+    background-color: #fede00;
+    height: 40px;
+}
+

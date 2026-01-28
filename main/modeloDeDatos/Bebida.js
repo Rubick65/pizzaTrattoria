@@ -3,10 +3,10 @@ import {Comida} from "./Comida.js";
 export const SABOR = Object.freeze({
     DULCE: "Dulce",
     SALADA: "Salada",
-    AGRIA: "AGRIA",
-    ACIDA: "ÁCIDA",
-    AMARGA: "AMARGA",
-    AGUA: "AGUA",
+    AGRIA: "Agria",
+    ACIDA: "Ácida",
+    AMARGA: "Amarga",
+    AGUA: "Agua",
 });
 
 export class Bebida extends Comida {
@@ -52,6 +52,14 @@ export class Bebida extends Comida {
     set alcohol(alcohol) {
         this._alcohol = alcohol;
     }
-
+    toString() {
+        var alcohol_mensaje = "";
+        if (this.alcohol) {
+            alcohol_mensaje = "Con alcohol"
+        }else {
+            alcohol_mensaje = "Sin alcohol";
+        }
+        return this.sabor.toString()+ " " + alcohol_mensaje;
+    }
 
 }
