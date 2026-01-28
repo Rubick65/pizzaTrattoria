@@ -49,6 +49,7 @@
 #contenedorInfo {
     display: flex;
     flex-direction: column;
+    gap: 20px;
     align-items: center;
     font: bold clamp(0.9rem, 2vw, 1.140rem) "Lucida Grande", Helvetica, Arial, sans-serif;
     margin-bottom: 0;
