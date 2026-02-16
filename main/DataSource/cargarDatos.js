@@ -45,10 +45,10 @@ export const pizzaDiamond = [
 // Lista de Postres
 export const postres = [
     new Postres("Helado Ghiaccio", "../imagenes_pizzeria/postre_1.png", TAMANIO.PEQUENIO, 3.5, 1, 250),
-    new Postres("Galletas Giovanna", "../imagenes_pizzeria/postre_2.png", TAMANIO.MEDIANO, 4.5, 1, 400),
-    new Postres("Moody Donuts", "../imagenes_pizzeria/postre_3.png", TAMANIO.GRANDE, 7, 1, 600),
-    new Postres("Tarta lerolero", "../imagenes_pizzeria/postre_4.png", TAMANIO.GRANDE, 8, 1, 800),
-    new Postres("Pan baby", "../imagenes_pizzeria/postre_5.png", TAMANIO.PEQUENIO, 1.99, 1, 200),
+    new Postres("Galletas Giovanna", "../imagenes_pizzeria/postre_5.png", TAMANIO.MEDIANO, 4.5, 1, 400),
+    new Postres("Moody Donuts", "../imagenes_pizzeria/postre_4.png", TAMANIO.GRANDE, 7, 1, 600),
+    new Postres("Tarta lerolero", "../imagenes_pizzeria/postre_3.png", TAMANIO.GRANDE, 8, 1, 800),
+    new Postres("Pan baby", "../imagenes_pizzeria/postre_2.png", TAMANIO.PEQUENIO, 1.99, 1, 200),
 ];
 
 // Lista de Menús
