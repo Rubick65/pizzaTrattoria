@@ -17,8 +17,9 @@ export const bebidas = [
 
 // Lista de Entrantes
 export const entrantes = [
-    new Entrantes("Patatas Fritas", "../imagenes_pizzeria/entrante_1.png", TAMANIO.MEDIANO, 3.0, 1, "Crujientes y saladas deliciosas en cualquier momento del dia", 23),
-    new Entrantes("Frituras Avdol", "../imagenes_pizzeria/avdol_1.png", TAMANIO.MEDIANO, 2.5, 1, "Directo desde la India, tan picante como el mismisimo fuego", 7),
+    new Entrantes("Salsa Lalihooo", "../imagenes_pizzeria/entrante_1.png", TAMANIO.PEQUENIO, 1.0, 1, "Tan sabrosa que soñaras con ella", 23),
+    new Entrantes("Magician wings", "../imagenes_pizzeria/avdol_1.png", TAMANIO.MEDIANO, 4, 1, "Directo desde la India, tan picante como el mismisimo fuego", 7),
+    new Entrantes("Frituras Avdol", "../imagenes_pizzeria/avdol_2.png", TAMANIO.MEDIANO, 5.5, 1, "Crujientes y sabrosas siendo freidas a fuego lento", 12),
 ];
 
 // Lista de Pizzas
@@ -43,8 +44,11 @@ export const pizzaDiamond = [
 
 // Lista de Postres
 export const postres = [
-    new Postres("Helado", "../imagenes_pizzeria/naranja.png", TAMANIO.PEQUENIO, 2.5, 1, 250),
-    new Postres("Tarta de Chocolate", "../imagenes_pizzeria/oferta_1.png", TAMANIO.PEQUENIO, 3.5, 1, 400)
+    new Postres("Helado Ghiaccio", "../imagenes_pizzeria/postre_1.png", TAMANIO.PEQUENIO, 3.5, 1, 250),
+    new Postres("Galletas Giovanna", "../imagenes_pizzeria/postre_5.png", TAMANIO.MEDIANO, 4.5, 1, 400),
+    new Postres("Moody Donuts", "../imagenes_pizzeria/postre_4.png", TAMANIO.GRANDE, 7, 1, 600),
+    new Postres("Tarta lerolero", "../imagenes_pizzeria/postre_3.png", TAMANIO.GRANDE, 8, 1, 800),
+    new Postres("Pan baby", "../imagenes_pizzeria/postre_2.png", TAMANIO.PEQUENIO, 1.99, 1, 200),
 ];
 
 // Lista de Menús
