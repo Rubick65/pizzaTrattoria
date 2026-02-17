@@ -1,5 +1,10 @@
 export class Grupo {
 
+    /**
+     * Valores iniciales del grupo
+     * @param listaPizzas Lista de pizzas que conforman el grupo
+     * @param imagenGrupo Imagen que representa al grupo en su conjunto
+     */
     constructor(listaPizzas, imagenGrupo) {
         this.listaPizzas = listaPizzas;
         this.imagenGrupo = imagenGrupo;

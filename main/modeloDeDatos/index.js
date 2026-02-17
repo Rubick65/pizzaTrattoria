@@ -1,3 +1,4 @@
+// Clase indice para exportar todas las clases necesarias
 export { Comida } from "./Comida.js";
 export { Bebida } from "./Bebida.js";
 export { Entrantes } from "./Entrantes.js";
