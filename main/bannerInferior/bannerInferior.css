@@ -1,3 +1,4 @@
+/* Quitamos márgenes y padding por defecto para que el banner ocupe todo el ancho */
 html, body {
     margin: 0;
     padding: 0;
@@ -6,11 +7,10 @@ html, body {
 
 .bottom-banner {
     position: relative;
-    width: 100vw;
-    height: 160px;
-    overflow: hidden;
+    width: 100vw;      /* Ocupa todo el ancho de la pantalla */
+    height: 160px;     /* Altura total del banner */
+    overflow: hidden;  /* Evita que se desborden los elementos internos */
 }
-
 
 .bottom-banner .pattern {
     position: absolute;
@@ -20,18 +20,19 @@ html, body {
 
     height: 60px;
 
+    /* Imagen que se repite horizontalmente en la parte inferior */
     background-image: url("../imagenes_pizzeria/patron.png");
     background-repeat: repeat-x;
     background-position: bottom;
     background-size: auto 60px;
 }
 
-/* Rectángulo morado */
+/* Capa morada que cubre el banner por encima del patrón */
 .bottom-banner .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100% - 23px);
+    height: calc(100% - 23px); /* Deja ver parte del patrón inferior */
     background-color: #5b17d1;
 }

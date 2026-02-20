@@ -1,38 +1,38 @@
 .ofertas-carousel {
     height: 420px;
-    overflow: hidden;
+    overflow: hidden;   /* Oculta la imagen que queda fuera al deslizar */
     padding: 200px 0;
 }
 
 .carousel-track {
-    display: flex;
-    width: 200%;
+    display: flex;       /* Coloca las imágenes en línea */
+    width: 200%;         /* El doble porque hay 2 imágenes */
     height: 100%;
-    transition: transform 0.6s ease;
+    transition: transform 0.6s ease; /* Animación del desplazamiento */
 }
 
 .carousel-track img {
     width: 100%;
     height: 100%;
-    transform: scale(2);
-    object-fit: contain;
+    transform: scale(2);  /* Aumenta el tamaño de la imagen */
+    object-fit: contain;  /* Mantiene proporciones */
     display: block;
 }
 
 
-/*ofertas*/
+/* Grid de ofertas pequeñas */
 .ofertas-grid {
     max-width: 1400px;
     margin: 40px auto;
     padding: 0 20px;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
     gap: 20px;
 }
 
 .oferta-card {
-    overflow: hidden;
+    overflow: hidden; /* Evita desbordes de la imagen */
 }
 
 .oferta-card img {
@@ -41,15 +41,15 @@
     object-fit: cover;
 }
 
-/*responsive*/
+/* Responsive */
 @media (max-width: 1024px) {
     .ofertas-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
     }
 }
 
 @media (max-width: 600px) {
     .ofertas-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* 1 columna en móvil */
     }
 }
